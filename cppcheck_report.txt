@@ -1,0 +1,3074 @@
+examples/benchmark/main.c:90:4: warning: %ld in format string (no. 2) requires 'long' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%-32s %ld %12.3f(us)\r\n", e->key, p->count, (p->count > 0) ? ((double)p->elapsed / 1000.0f) / (double)p->count : 0);
+   ^
+examples/benchmark/main.c:76:24: style: The scope of the variable 'e' can be reduced. [variableScope]
+ struct hmap_entry_t * e;
+                       ^
+examples/benchmark/main.c:77:22: style: The scope of the variable 'p' can be reduced. [variableScope]
+ struct profiler_t * p;
+                     ^
+examples/benchmark/main.c:78:9: style: The scope of the variable 'total' can be reduced. [variableScope]
+ double total = 0;
+        ^
+examples/benchmark/main.c:79:9: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ double mean = 0;
+        ^
+examples/benchmark/main.c:80:9: style: The scope of the variable 'fps' can be reduced. [variableScope]
+ double fps = 0;
+        ^
+examples/benchmark/main.c:104:23: style: The scope of the variable 'n' can be reduced. [variableScope]
+ struct onnx_node_t * n;
+                      ^
+examples/benchmark/main.c:105:18: style: The scope of the variable 'm' can be reduced. [variableScope]
+ struct hmap_t * m;
+                 ^
+examples/benchmark/main.c:106:22: style: The scope of the variable 'p' can be reduced. [variableScope]
+ struct profiler_t * p;
+                     ^
+examples/benchmark/main.c:107:7: style: The scope of the variable 'name' can be reduced. [variableScope]
+ char name[256];
+      ^
+examples/benchmark/main.c:109:6: style: The scope of the variable 'len' can be reduced. [variableScope]
+ int len, i;
+     ^
+examples/benchmark/main.c:109:11: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int len, i;
+          ^
+examples/benchmark/main.c:126:9: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+    len += sprintf(name + len, "%*s", 24 - len, n->r->name);
+        ^
+examples/hello/main.c:2245:25: style: The scope of the variable 'input' can be reduced. [variableScope]
+ struct onnx_tensor_t * input;
+                        ^
+examples/hello/main.c:2246:25: style: The scope of the variable 'output' can be reduced. [variableScope]
+ struct onnx_tensor_t * output;
+                        ^
+src/default/Abs.c:117:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Abs.c:132:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Abs.c:75:18: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  py[i] = (px[i] < 0) ? -px[i] : px[i];
+                 ^
+src/default/Abs.c:86:18: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  py[i] = (px[i] < 0) ? -px[i] : px[i];
+                 ^
+src/default/Abs.c:97:18: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  py[i] = (px[i] < 0) ? -px[i] : px[i];
+                 ^
+src/default/Abs.c:108:18: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  py[i] = (px[i] < 0) ? -px[i] : px[i];
+                 ^
+src/default/Acos.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Acosh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Add.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Add.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Add.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Add.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Add.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Add.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Add.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Add.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Add.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Add.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Add.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Add.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Add.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Add.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Add.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Add.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Add.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Add.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Add.c:183:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Add.c:184:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Add.c:200:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Add.c:201:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Add.c:217:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Add.c:218:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/And.c:30:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/And.c:31:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/ArgMax.c:48:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ArgMin.c:48:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/Asin.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Asinh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Atan.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Atanh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/AveragePool.c:28:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, l;
+     ^
+src/default/AveragePool.c:28:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, l;
+        ^
+src/default/AveragePool.c:209:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/AveragePool.c:214:6: style: The scope of the variable 'padcnt' can be reduced. [variableScope]
+ int padcnt, ispad, size;
+     ^
+src/default/AveragePool.c:260:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/AveragePool.c:265:6: style: The scope of the variable 'padcnt' can be reduced. [variableScope]
+ int padcnt, ispad, size;
+     ^
+src/default/AveragePool.c:311:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum;
+        ^
+src/default/AveragePool.c:316:6: style: The scope of the variable 'padcnt' can be reduced. [variableScope]
+ int padcnt, ispad, size;
+     ^
+src/default/BatchNormalization.c:62:12: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, o, jc;
+           ^
+src/default/BatchNormalization.c:62:15: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, o, jc;
+              ^
+src/default/BatchNormalization.c:94:12: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, o, jc;
+           ^
+src/default/BatchNormalization.c:94:15: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, o, jc;
+              ^
+src/default/BatchNormalization.c:126:12: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, o, jc;
+           ^
+src/default/BatchNormalization.c:126:15: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, o, jc;
+              ^
+src/default/Cast.c:151:5: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+    sprintf(buf, "%u", (px[i] != 0) ? 1 : 0);
+    ^
+src/default/Ceil.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Ceil.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Clip.c:258:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Clip.c:282:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Clip.c:18:9: style: struct member 'Anonymous0::real' is never used. [unusedStructMember]
+  float real;
+        ^
+src/default/Clip.c:19:9: style: struct member 'Anonymous0::imaginary' is never used. [unusedStructMember]
+  float imaginary;
+        ^
+src/default/Clip.c:22:10: style: struct member 'Anonymous1::real' is never used. [unusedStructMember]
+  double real;
+         ^
+src/default/Clip.c:23:10: style: struct member 'Anonymous1::imaginary' is never used. [unusedStructMember]
+  double imaginary;
+         ^
+src/default/Concat.c:81:11: style: The scope of the variable 'px' can be reduced. [variableScope]
+  char ** px;
+          ^
+src/default/Concat.c:107:10: style: The scope of the variable 'px' can be reduced. [variableScope]
+  char * px;
+         ^
+src/default/Constant.c:5:25: style: The scope of the variable 'y' can be reduced. [variableScope]
+ struct onnx_tensor_t * y;
+                        ^
+src/default/ConstantOfShape.c:38:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/Conv.c:553:1: error: Memory leak: matw [memleak]
+}
+^
+src/default/Conv.c:553:1: error: Memory leak: matx [memleak]
+}
+^
+src/default/Conv.c:553:1: error: Memory leak: maty [memleak]
+}
+^
+src/default/Conv.c:839:1: error: Memory leak: matw [memleak]
+}
+^
+src/default/Conv.c:839:1: error: Memory leak: matx [memleak]
+}
+^
+src/default/Conv.c:839:1: error: Memory leak: maty [memleak]
+}
+^
+src/default/Conv.c:1125:1: error: Memory leak: matw [memleak]
+}
+^
+src/default/Conv.c:1125:1: error: Memory leak: matx [memleak]
+}
+^
+src/default/Conv.c:1125:1: error: Memory leak: maty [memleak]
+}
+^
+src/default/Conv.c:35:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, l;
+     ^
+src/default/Conv.c:35:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, l;
+        ^
+src/default/Conv.c:293:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int ch, i;
+         ^
+src/default/Conv.c:579:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int ch, i;
+         ^
+src/default/Conv.c:865:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int ch, i;
+         ^
+src/default/Conv.c:348:13: style: Local variable 'w' shadows outer variable [shadowVariable]
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:274:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:348:13: note: Shadow variable
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:355:15: style: Local variable 'n' shadows outer argument [shadowArgument]
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:269:47: note: Shadowed declaration
+static void Conv_float16(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:355:15: note: Shadow variable
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:360:17: style: Local variable 'i' shadows outer variable [shadowVariable]
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:293:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:360:17: note: Shadow variable
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:381:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:269:47: note: Shadowed declaration
+static void Conv_float16(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:381:14: note: Shadow variable
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:387:16: style: Local variable 'i' shadows outer variable [shadowVariable]
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:293:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:387:16: note: Shadow variable
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:435:20: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:274:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:435:20: note: Shadow variable
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:443:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:269:47: note: Shadowed declaration
+static void Conv_float16(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:443:14: note: Shadow variable
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:455:22: style: Local variable 'w' shadows outer variable [shadowVariable]
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:274:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:455:22: note: Shadow variable
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:477:17: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Conv.c:274:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:477:17: note: Shadow variable
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Conv.c:634:13: style: Local variable 'w' shadows outer variable [shadowVariable]
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:560:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:634:13: note: Shadow variable
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:641:15: style: Local variable 'n' shadows outer argument [shadowArgument]
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:555:47: note: Shadowed declaration
+static void Conv_float32(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:641:15: note: Shadow variable
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:646:17: style: Local variable 'i' shadows outer variable [shadowVariable]
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:579:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:646:17: note: Shadow variable
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:667:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:555:47: note: Shadowed declaration
+static void Conv_float32(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:667:14: note: Shadow variable
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:673:16: style: Local variable 'i' shadows outer variable [shadowVariable]
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:579:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:673:16: note: Shadow variable
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:721:20: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:560:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:721:20: note: Shadow variable
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:729:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:555:47: note: Shadowed declaration
+static void Conv_float32(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:729:14: note: Shadow variable
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:741:22: style: Local variable 'w' shadows outer variable [shadowVariable]
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:560:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:741:22: note: Shadow variable
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:763:17: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Conv.c:560:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:763:17: note: Shadow variable
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Conv.c:920:13: style: Local variable 'w' shadows outer variable [shadowVariable]
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:846:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:920:13: note: Shadow variable
+    for(int w = 0; w < oW; ++w)
+            ^
+src/default/Conv.c:927:15: style: Local variable 'n' shadows outer argument [shadowArgument]
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:841:47: note: Shadowed declaration
+static void Conv_float64(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:927:15: note: Shadow variable
+      for(int n = 0; n < oN; ++n)
+              ^
+src/default/Conv.c:932:17: style: Local variable 'i' shadows outer variable [shadowVariable]
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:865:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:932:17: note: Shadow variable
+        for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+                ^
+src/default/Conv.c:953:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:841:47: note: Shadowed declaration
+static void Conv_float64(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:953:14: note: Shadow variable
+     for(int n = 0; n < oN; ++n)
+             ^
+src/default/Conv.c:959:16: style: Local variable 'i' shadows outer variable [shadowVariable]
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:865:10: note: Shadowed declaration
+ int ch, i;
+         ^
+src/default/Conv.c:959:16: note: Shadow variable
+       for(int i = (base_h < 0 ? (-base_h) / pdat->dilations[0] : 0); i < H; ++i)
+               ^
+src/default/Conv.c:1007:20: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:846:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:1007:20: note: Shadow variable
+       for (size_t w = 0; w < W; w++)
+                   ^
+src/default/Conv.c:1015:14: style: Local variable 'n' shadows outer argument [shadowArgument]
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:841:47: note: Shadowed declaration
+static void Conv_float64(struct onnx_node_t * n)
+                                              ^
+src/default/Conv.c:1015:14: note: Shadow variable
+    for (int n = 0; n < oN; n++)
+             ^
+src/default/Conv.c:1027:22: style: Local variable 'w' shadows outer variable [shadowVariable]
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:846:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:1027:22: note: Shadow variable
+         for (size_t w = 0; w < W; w++)
+                     ^
+src/default/Conv.c:1049:17: style: Local variable 'w' shadows outer variable [shadowVariable]
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Conv.c:846:25: note: Shadowed declaration
+ struct onnx_tensor_t * w = n->inputs[1];
+                        ^
+src/default/Conv.c:1049:17: note: Shadow variable
+       for (int w = 0; w < oW; ++w)
+                ^
+src/default/Cos.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Cosh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Div.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Div.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Div.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Div.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Div.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Div.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Div.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Div.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Div.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Div.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Div.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Div.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Div.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Div.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Div.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Div.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Div.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Div.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Div.c:183:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Div.c:184:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Div.c:200:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Div.c:201:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Div.c:217:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Div.c:218:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Elu.c:78:26: style: Expression 'exp(x) - 1' can be replaced by 'expm1(x)' to avoid loss of precision. [unpreciseMathCall]
+  py[i] = (px[i] < 0) ? (exp(px[i]) - 1) * pdat->alpha : px[i];
+                         ^
+src/default/Elu.c:48:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Elu.c:53:37: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  py[i] = float32_to_float16((px[i] < 0) ? (expf(v) - 1) * pdat->alpha : v);
+                                    ^
+src/default/Equal.c:30:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Equal.c:31:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Equal.c:47:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Equal.c:48:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Equal.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Equal.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Equal.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Equal.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Equal.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Equal.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Equal.c:115:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Equal.c:116:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Equal.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Equal.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Equal.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Equal.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Equal.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Equal.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Equal.c:183:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Equal.c:184:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Equal.c:200:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Equal.c:201:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Equal.c:217:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Equal.c:218:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Equal.c:234:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Equal.c:235:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Erf.c:125:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Erf.c:140:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Exp.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Exp.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Expand.c:51:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint8_t * px = (uint8_t *)x->datas;
+              ^
+src/default/Expand.c:65:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int8_t * px = (int8_t *)x->datas;
+             ^
+src/default/Expand.c:79:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int16_t * px = (int16_t *)x->datas;
+              ^
+src/default/Expand.c:93:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int32_t * px = (int32_t *)x->datas;
+              ^
+src/default/Expand.c:107:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int64_t * px = (int64_t *)x->datas;
+              ^
+src/default/Expand.c:121:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint8_t * px = (uint8_t *)x->datas;
+              ^
+src/default/Expand.c:135:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Expand.c:149:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint32_t * px = (uint32_t *)x->datas;
+               ^
+src/default/Expand.c:163:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint64_t * px = (uint64_t *)x->datas;
+               ^
+src/default/Expand.c:177:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Expand.c:191:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Expand.c:205:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ float * px = (float *)x->datas;
+            ^
+src/default/Expand.c:219:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ double * px = (double *)x->datas;
+             ^
+src/default/Expand.c:233:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ float * px = (float *)x->datas;
+            ^
+src/default/Expand.c:248:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ double * px = (double *)x->datas;
+             ^
+src/default/Expand.c:262:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ char ** px = (char **)x->datas;
+            ^
+src/default/Floor.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Floor.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/GlobalAveragePool.c:43:14: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+ int idx[2], cnt;
+             ^
+src/default/GlobalAveragePool.c:73:14: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+ int idx[2], cnt;
+             ^
+src/default/GlobalAveragePool.c:103:14: style: The scope of the variable 'cnt' can be reduced. [variableScope]
+ int idx[2], cnt;
+             ^
+src/default/GlobalAveragePool.c:53:7: style: Variable 'cnt' is assigned a value that is never used. [unreadVariable]
+  cnt %= x->strides[1];
+      ^
+src/default/GlobalAveragePool.c:83:7: style: Variable 'cnt' is assigned a value that is never used. [unreadVariable]
+  cnt %= x->strides[1];
+      ^
+src/default/GlobalAveragePool.c:113:7: style: Variable 'cnt' is assigned a value that is never used. [unreadVariable]
+  cnt %= x->strides[1];
+      ^
+src/default/Greater.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Greater.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Greater.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Greater.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Greater.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Greater.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Greater.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Greater.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Greater.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Greater.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Greater.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Greater.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Greater.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Greater.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Greater.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Greater.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Greater.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Greater.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Greater.c:183:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Greater.c:184:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Greater.c:200:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Greater.c:201:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Greater.c:217:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Greater.c:218:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/GreaterOrEqual.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/GreaterOrEqual.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/GreaterOrEqual.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/GreaterOrEqual.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/GreaterOrEqual.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/GreaterOrEqual.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/GreaterOrEqual.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/GreaterOrEqual.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/GreaterOrEqual.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/GreaterOrEqual.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/GreaterOrEqual.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/GreaterOrEqual.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/GreaterOrEqual.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/GreaterOrEqual.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/GreaterOrEqual.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/GreaterOrEqual.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/GreaterOrEqual.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/GreaterOrEqual.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/GreaterOrEqual.c:183:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/GreaterOrEqual.c:184:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/GreaterOrEqual.c:200:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/GreaterOrEqual.c:201:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/HardSigmoid.c:50:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/If.c:57:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/If.c:90:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/InstanceNormalization.c:52:8: style: The scope of the variable 'temp' can be reduced. [variableScope]
+ float temp, mean, var;
+       ^
+src/default/InstanceNormalization.c:52:14: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ float temp, mean, var;
+             ^
+src/default/InstanceNormalization.c:52:20: style: The scope of the variable 'var' can be reduced. [variableScope]
+ float temp, mean, var;
+                   ^
+src/default/InstanceNormalization.c:57:12: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+           ^
+src/default/InstanceNormalization.c:57:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+              ^
+src/default/InstanceNormalization.c:57:18: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+                 ^
+src/default/InstanceNormalization.c:90:8: style: The scope of the variable 'temp' can be reduced. [variableScope]
+ float temp, mean, var;
+       ^
+src/default/InstanceNormalization.c:90:14: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ float temp, mean, var;
+             ^
+src/default/InstanceNormalization.c:90:20: style: The scope of the variable 'var' can be reduced. [variableScope]
+ float temp, mean, var;
+                   ^
+src/default/InstanceNormalization.c:95:12: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+           ^
+src/default/InstanceNormalization.c:95:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+              ^
+src/default/InstanceNormalization.c:95:18: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+                 ^
+src/default/InstanceNormalization.c:128:9: style: The scope of the variable 'temp' can be reduced. [variableScope]
+ double temp, mean, var;
+        ^
+src/default/InstanceNormalization.c:128:15: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ double temp, mean, var;
+              ^
+src/default/InstanceNormalization.c:128:21: style: The scope of the variable 'var' can be reduced. [variableScope]
+ double temp, mean, var;
+                    ^
+src/default/InstanceNormalization.c:133:12: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+           ^
+src/default/InstanceNormalization.c:133:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+              ^
+src/default/InstanceNormalization.c:133:18: style: The scope of the variable 'jc' can be reduced. [variableScope]
+ int i, j, l, o, jc;
+                 ^
+src/default/IsNaN.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/IsNaN.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/LeakyRelu.c:48:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Less.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Less.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Less.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Less.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Less.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Less.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Less.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Less.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Less.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Less.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Less.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Less.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Less.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Less.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Less.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Less.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Less.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Less.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Less.c:183:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Less.c:184:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Less.c:200:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Less.c:201:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Less.c:217:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Less.c:218:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/LessOrEqual.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/LessOrEqual.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/LessOrEqual.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/LessOrEqual.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/LessOrEqual.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/LessOrEqual.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/LessOrEqual.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/LessOrEqual.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/LessOrEqual.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/LessOrEqual.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/LessOrEqual.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/LessOrEqual.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/LessOrEqual.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/LessOrEqual.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/LessOrEqual.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/LessOrEqual.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/LessOrEqual.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/LessOrEqual.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/LessOrEqual.c:183:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/LessOrEqual.c:184:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/LessOrEqual.c:200:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/LessOrEqual.c:201:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Log.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Log.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/LogSoftmax.c:71:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/LogSoftmax.c:114:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/LogSoftmax.c:157:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/LogSoftmax.c:197:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/MatMul.c:97:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/MatMul.c:98:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/MatMul.c:125:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/MatMul.c:126:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/MatMul.c:153:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/MatMul.c:154:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/MatMul.c:181:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/MatMul.c:182:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/MatMul.c:209:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/MatMul.c:210:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/MatMul.c:237:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/MatMul.c:238:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/MatMul.c:265:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/MatMul.c:266:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/MatMul.c:293:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/MatMul.c:294:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Max.c:36:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int8_t maxv;
+        ^
+src/default/Max.c:58:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int16_t maxv;
+         ^
+src/default/Max.c:80:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int32_t maxv;
+         ^
+src/default/Max.c:102:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int64_t maxv;
+         ^
+src/default/Max.c:124:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint8_t maxv;
+         ^
+src/default/Max.c:146:11: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint16_t maxv;
+          ^
+src/default/Max.c:168:11: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint32_t maxv;
+          ^
+src/default/Max.c:190:11: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint64_t maxv;
+          ^
+src/default/Max.c:213:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv;
+       ^
+src/default/Max.c:237:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv;
+       ^
+src/default/Max.c:260:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv;
+       ^
+src/default/Max.c:282:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ double maxv;
+        ^
+src/default/MaxPool.c:30:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, l;
+     ^
+src/default/MaxPool.c:30:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int i, l;
+        ^
+src/default/MaxPool.c:223:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int8_t maxv, v;
+        ^
+src/default/MaxPool.c:263:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint8_t maxv, v;
+         ^
+src/default/MaxPool.c:303:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv, v;
+       ^
+src/default/MaxPool.c:343:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv, v;
+       ^
+src/default/MaxPool.c:383:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ double maxv, v;
+        ^
+src/default/Mod.c:51:9: style: The scope of the variable 't' can be reduced. [variableScope]
+ int8_t t;
+        ^
+src/default/Mod.c:85:10: style: The scope of the variable 't' can be reduced. [variableScope]
+ int16_t t;
+         ^
+src/default/Mod.c:119:10: style: The scope of the variable 't' can be reduced. [variableScope]
+ int32_t t;
+         ^
+src/default/Mod.c:153:10: style: The scope of the variable 't' can be reduced. [variableScope]
+ int64_t t;
+         ^
+src/default/Mod.c:304:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Mod.c:305:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Mod.c:321:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Mod.c:322:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Mod.c:338:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Mod.c:339:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Mod.c:355:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Mod.c:356:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Mul.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Mul.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Mul.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Mul.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Mul.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Mul.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Mul.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Mul.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Mul.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Mul.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Mul.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Mul.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Mul.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Mul.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Mul.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Mul.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Mul.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Mul.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Mul.c:183:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Mul.c:184:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Mul.c:200:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Mul.c:201:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Mul.c:217:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Mul.c:218:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Neg.c:73:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Neg.c:88:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Or.c:30:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Or.c:31:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/PRelu.c:115:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/PRelu.c:76:12: style: Checking if unsigned expression 'pa[i]' is less than zero. [unsignedLessThanZero]
+  if(pa[i] < 0)
+           ^
+src/default/PRelu.c:97:12: style: Checking if unsigned expression 'pa[i]' is less than zero. [unsignedLessThanZero]
+  if(pa[i] < 0)
+           ^
+src/default/Pow.c:82:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Pow.c:83:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:84:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/Pow.c:101:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Pow.c:102:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:103:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/Pow.c:120:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Pow.c:121:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:122:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/Pow.c:139:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Pow.c:140:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:141:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/Pow.c:158:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Pow.c:159:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:160:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/Pow.c:177:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Pow.c:178:9: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ void * pb;
+        ^
+src/default/Pow.c:179:9: style: The scope of the variable 'v' can be reduced. [variableScope]
+ double v;
+        ^
+src/default/RandomNormal.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/RandomNormal.c:78:10: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   float ty, tx;
+         ^
+src/default/RandomNormal.c:78:14: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   float ty, tx;
+             ^
+src/default/RandomNormal.c:90:10: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   float ty, tx;
+         ^
+src/default/RandomNormal.c:90:14: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   float ty, tx;
+             ^
+src/default/RandomNormal.c:102:11: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   double ty, tx;
+          ^
+src/default/RandomNormal.c:102:15: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   double ty, tx;
+              ^
+src/default/RandomNormalLike.c:74:10: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   float ty, tx;
+         ^
+src/default/RandomNormalLike.c:74:14: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   float ty, tx;
+             ^
+src/default/RandomNormalLike.c:86:10: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   float ty, tx;
+         ^
+src/default/RandomNormalLike.c:86:14: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   float ty, tx;
+             ^
+src/default/RandomNormalLike.c:98:11: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   double ty, tx;
+          ^
+src/default/RandomNormalLike.c:98:15: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   double ty, tx;
+              ^
+src/default/RandomUniform.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/Reciprocal.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Reciprocal.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/ReduceL1.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceL1.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceL1.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceL1.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceL1.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceL1.c:155:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceL1.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:203:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceL1.c:212:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:251:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceL1.c:260:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:299:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceL1.c:308:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:347:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceL1.c:356:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:395:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceL1.c:404:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:443:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL1.c:452:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:491:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL1.c:500:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:539:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL1.c:548:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL1.c:587:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum;
+        ^
+src/default/ReduceL1.c:596:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceL2.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceL2.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceL2.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceL2.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceL2.c:156:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:165:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:206:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:215:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:256:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:265:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:306:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:315:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:356:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:365:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:406:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceL2.c:415:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:455:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceL2.c:464:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:504:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceL2.c:513:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:553:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceL2.c:562:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceL2.c:602:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum, v;
+        ^
+src/default/ReduceL2.c:611:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceLogSum.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceLogSum.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceLogSum.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceLogSum.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceLogSum.c:155:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:203:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:212:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:251:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:260:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:299:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:308:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:347:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:356:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:395:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:404:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:443:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:452:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:491:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:500:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:539:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSum.c:548:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSum.c:587:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum;
+        ^
+src/default/ReduceLogSum.c:596:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceLogSumExp.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceLogSumExp.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceLogSumExp.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceLogSumExp.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceLogSumExp.c:155:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:203:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:212:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:251:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:260:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:299:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:308:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:347:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:356:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:395:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:404:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:443:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:452:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:491:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:500:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:539:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceLogSumExp.c:548:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceLogSumExp.c:587:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum;
+        ^
+src/default/ReduceLogSumExp.c:596:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceMax.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceMax.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceMax.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceMax.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceMax.c:155:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int8_t maxv, t;
+        ^
+src/default/ReduceMax.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:205:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int32_t maxv, t;
+         ^
+src/default/ReduceMax.c:214:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:255:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ int64_t maxv, t;
+         ^
+src/default/ReduceMax.c:264:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:305:10: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint8_t maxv, t;
+         ^
+src/default/ReduceMax.c:314:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:355:11: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint32_t maxv, t;
+          ^
+src/default/ReduceMax.c:364:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:405:11: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ uint64_t maxv, t;
+          ^
+src/default/ReduceMax.c:414:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:455:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv, t;
+       ^
+src/default/ReduceMax.c:464:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:505:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv, t;
+       ^
+src/default/ReduceMax.c:514:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:555:8: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ float maxv, t;
+       ^
+src/default/ReduceMax.c:564:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMax.c:605:9: style: The scope of the variable 'maxv' can be reduced. [variableScope]
+ double maxv, t;
+        ^
+src/default/ReduceMax.c:614:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceMean.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceMean.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceMean.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceMean.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceMean.c:155:16: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t mean, sum;
+               ^
+src/default/ReduceMean.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:205:16: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t mean, sum;
+               ^
+src/default/ReduceMean.c:214:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:255:16: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t mean, sum;
+               ^
+src/default/ReduceMean.c:264:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:305:17: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t mean, sum;
+                ^
+src/default/ReduceMean.c:314:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:355:17: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t mean, sum;
+                ^
+src/default/ReduceMean.c:364:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:405:17: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t mean, sum;
+                ^
+src/default/ReduceMean.c:414:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:455:14: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float mean, sum;
+             ^
+src/default/ReduceMean.c:464:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:505:14: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float mean, sum;
+             ^
+src/default/ReduceMean.c:514:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:555:14: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float mean, sum;
+             ^
+src/default/ReduceMean.c:564:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMean.c:605:15: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double mean, sum;
+              ^
+src/default/ReduceMean.c:614:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceMin.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceMin.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceMin.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceMin.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceMin.c:155:9: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ int8_t minv, t;
+        ^
+src/default/ReduceMin.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:205:10: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ int32_t minv, t;
+         ^
+src/default/ReduceMin.c:214:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:255:10: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ int64_t minv, t;
+         ^
+src/default/ReduceMin.c:264:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:305:10: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ uint8_t minv, t;
+         ^
+src/default/ReduceMin.c:314:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:355:11: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ uint32_t minv, t;
+          ^
+src/default/ReduceMin.c:364:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:405:11: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ uint64_t minv, t;
+          ^
+src/default/ReduceMin.c:414:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:455:8: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ float minv, t;
+       ^
+src/default/ReduceMin.c:464:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:505:8: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ float minv, t;
+       ^
+src/default/ReduceMin.c:514:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:555:8: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ float minv, t;
+       ^
+src/default/ReduceMin.c:564:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceMin.c:605:9: style: The scope of the variable 'minv' can be reduced. [variableScope]
+ double minv, t;
+        ^
+src/default/ReduceMin.c:614:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceProd.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceProd.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceProd.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceProd.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceProd.c:155:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:164:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:203:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:212:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:251:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:260:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:299:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:308:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:347:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:356:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:395:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:404:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:443:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:452:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:491:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:500:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:539:8: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ float prod;
+       ^
+src/default/ReduceProd.c:548:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceProd.c:587:9: style: The scope of the variable 'prod' can be reduced. [variableScope]
+ double prod;
+        ^
+src/default/ReduceProd.c:596:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:45:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceSum.c:45:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceSum.c:46:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceSum.c:135:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceSum.c:144:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:183:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceSum.c:192:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:231:10: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ int64_t sum;
+         ^
+src/default/ReduceSum.c:240:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:279:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceSum.c:288:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:327:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceSum.c:336:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:375:11: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ uint64_t sum;
+          ^
+src/default/ReduceSum.c:384:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:423:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSum.c:432:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:471:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSum.c:480:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:519:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSum.c:528:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSum.c:567:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum;
+        ^
+src/default/ReduceSum.c:576:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:15:6: style: The scope of the variable 'nint' can be reduced. [variableScope]
+ int nint;
+     ^
+src/default/ReduceSumSquare.c:16:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/ReduceSumSquare.c:81:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, found;
+     ^
+src/default/ReduceSumSquare.c:81:12: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int axis, found;
+           ^
+src/default/ReduceSumSquare.c:82:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/ReduceSumSquare.c:156:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:165:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:206:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:215:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:256:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:265:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:306:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:315:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:356:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:365:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:406:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum;
+       ^
+src/default/ReduceSumSquare.c:415:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:455:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceSumSquare.c:464:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:504:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceSumSquare.c:513:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:553:8: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ float sum, v;
+       ^
+src/default/ReduceSumSquare.c:562:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/ReduceSumSquare.c:602:9: style: The scope of the variable 'sum' can be reduced. [variableScope]
+ double sum, v;
+        ^
+src/default/ReduceSumSquare.c:611:15: style: The scope of the variable 'o' can be reduced. [variableScope]
+ int i, j, k, o;
+              ^
+src/default/Relu.c:73:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Relu.c:90:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Reshape.c:5:25: style: The scope of the variable 'x' can be reduced. [variableScope]
+ struct onnx_tensor_t * x;
+                        ^
+src/default/Reshape.c:6:25: style: The scope of the variable 's' can be reduced. [variableScope]
+ struct onnx_tensor_t * s;
+                        ^
+src/default/Round.c:34:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Selu.c:50:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Shrink.c:202:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sigmoid.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sigmoid.c:47:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sign.c:173:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sign.c:193:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sign.c:106:17: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  else if(px[i] < 0)
+                ^
+src/default/Sign.c:124:17: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  else if(px[i] < 0)
+                ^
+src/default/Sign.c:142:17: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  else if(px[i] < 0)
+                ^
+src/default/Sign.c:160:17: style: Checking if unsigned expression 'px[i]' is less than zero. [unsignedLessThanZero]
+  else if(px[i] < 0)
+                ^
+src/default/Sin.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sinh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Softmax.c:71:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/Softmax.c:114:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/Softmax.c:157:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/Softmax.c:197:18: style: The scope of the variable 'oo' can be reduced. [variableScope]
+ int i, j, k, o, oo, io;
+                 ^
+src/default/Softplus.c:57:11: style: Expression 'log(1 + x)' can be replaced by 'log1p(x)' to avoid loss of precision. [unpreciseMathCall]
+  py[i] = log(exp(px[i]) + 1);
+          ^
+src/default/Softplus.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Softsign.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sqrt.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Sqrt.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Squeeze.c:19:25: style: The scope of the variable 'a' can be reduced. [variableScope]
+ struct onnx_tensor_t * a;
+                        ^
+src/default/Squeeze.c:23:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis, flag;
+     ^
+src/default/Squeeze.c:23:12: style: The scope of the variable 'flag' can be reduced. [variableScope]
+ int axis, flag;
+           ^
+src/default/Squeeze.c:24:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+src/default/Sub.c:30:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int8_t * pa;
+          ^
+src/default/Sub.c:31:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int8_t * pb;
+          ^
+src/default/Sub.c:47:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int16_t * pa;
+           ^
+src/default/Sub.c:48:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int16_t * pb;
+           ^
+src/default/Sub.c:64:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int32_t * pa;
+           ^
+src/default/Sub.c:65:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int32_t * pb;
+           ^
+src/default/Sub.c:81:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ int64_t * pa;
+           ^
+src/default/Sub.c:82:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ int64_t * pb;
+           ^
+src/default/Sub.c:98:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Sub.c:99:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/default/Sub.c:115:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Sub.c:116:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Sub.c:132:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint32_t * pa;
+            ^
+src/default/Sub.c:133:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint32_t * pb;
+            ^
+src/default/Sub.c:149:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint64_t * pa;
+            ^
+src/default/Sub.c:150:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint64_t * pb;
+            ^
+src/default/Sub.c:166:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Sub.c:167:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Sub.c:183:13: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint16_t * pa;
+            ^
+src/default/Sub.c:184:13: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint16_t * pb;
+            ^
+src/default/Sub.c:200:10: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ float * pa;
+         ^
+src/default/Sub.c:201:10: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ float * pb;
+         ^
+src/default/Sub.c:217:11: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ double * pa;
+          ^
+src/default/Sub.c:218:11: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ double * pb;
+          ^
+src/default/Tan.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Tanh.c:29:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Tanh.c:44:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/ThresholdedRelu.c:48:8: style: The scope of the variable 'v' can be reduced. [variableScope]
+ float v;
+       ^
+src/default/Tile.c:35:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint8_t * px = (uint8_t *)x->datas;
+              ^
+src/default/Tile.c:49:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int8_t * px = (int8_t *)x->datas;
+             ^
+src/default/Tile.c:63:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int16_t * px = (int16_t *)x->datas;
+              ^
+src/default/Tile.c:77:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int32_t * px = (int32_t *)x->datas;
+              ^
+src/default/Tile.c:91:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ int64_t * px = (int64_t *)x->datas;
+              ^
+src/default/Tile.c:105:15: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint8_t * px = (uint8_t *)x->datas;
+              ^
+src/default/Tile.c:119:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Tile.c:133:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint32_t * px = (uint32_t *)x->datas;
+               ^
+src/default/Tile.c:147:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint64_t * px = (uint64_t *)x->datas;
+               ^
+src/default/Tile.c:161:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Tile.c:175:16: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ uint16_t * px = (uint16_t *)x->datas;
+               ^
+src/default/Tile.c:189:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ float * px = (float *)x->datas;
+            ^
+src/default/Tile.c:203:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ double * px = (double *)x->datas;
+             ^
+src/default/Tile.c:217:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ float * px = (float *)x->datas;
+            ^
+src/default/Tile.c:232:14: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ double * px = (double *)x->datas;
+             ^
+src/default/Tile.c:246:13: style: Variable 'px' is assigned a value that is never used. [unreadVariable]
+ char ** px = (char **)x->datas;
+            ^
+src/default/Transpose.c:12:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/Transpose.c:63:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/default/Transpose.c:83:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:105:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:127:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:149:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:171:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:193:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:215:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:237:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:259:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:281:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:303:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:325:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:347:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:369:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:392:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Transpose.c:415:6: style: The scope of the variable 'ox' can be reduced. [variableScope]
+ int ox, oy;
+     ^
+src/default/Unsqueeze.c:23:6: style: The scope of the variable 'axis' can be reduced. [variableScope]
+ int axis;
+     ^
+src/default/Where.c:38:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:59:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:80:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:101:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:122:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:143:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:164:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:185:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:206:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:227:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:248:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:269:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:290:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:311:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:333:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Where.c:355:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ uint8_t * c;
+           ^
+src/default/Xor.c:30:12: style: The scope of the variable 'pa' can be reduced. [variableScope]
+ uint8_t * pa;
+           ^
+src/default/Xor.c:31:12: style: The scope of the variable 'pb' can be reduced. [variableScope]
+ uint8_t * pb;
+           ^
+src/hmap.c:39:29: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+ if(!(word & 0x80000000)) { word <<= 1; bit -= 1; }
+                            ^
+src/hmap.c:156:18: style: The statement 'if (pos->value!=value) pos->value=value' is logically equivalent to 'pos->value=value'. [duplicateConditionalAssign]
+   if(pos->value != value)
+                 ^
+src/hmap.c:157:16: note: Assignment 'pos->value=value'
+    pos->value = value;
+               ^
+src/hmap.c:156:18: note: Condition 'pos->value!=value' is redundant
+   if(pos->value != value)
+                 ^
+src/list.h:246:21: style: The scope of the variable 'first' can be reduced. [variableScope]
+ struct list_head * first;
+                    ^
+src/onnxconf.h:118:23: error: Signed integer overflow for expression '(v&0x8000)<<16'. [integerOverflow]
+ t.u |= ((v & 0x8000) << 16);
+                      ^
+src/hmap.c:39:34: style: Variable 'word' is assigned a value that is never used. [unreadVariable]
+ if(!(word & 0x80000000)) { word <<= 1; bit -= 1; }
+                                 ^
+src/onnx.c:54:6: style: Condition 'ctx' is always true [knownConditionTrueFalse]
+  if(ctx)
+     ^
+src/onnx.c:48:5: note: Assuming that condition '!ctx' is not redundant
+ if(!ctx)
+    ^
+src/onnx.c:54:6: note: Condition 'ctx' is always true
+  if(ctx)
+     ^
+src/onnx.c:64:6: style: Condition 'ctx' is always true [knownConditionTrueFalse]
+  if(ctx)
+     ^
+src/onnx.c:48:5: note: Assuming that condition '!ctx' is not redundant
+ if(!ctx)
+    ^
+src/onnx.c:52:5: note: Assuming condition is false
+ if(!ctx->model)
+    ^
+src/onnx.c:64:6: note: Condition 'ctx' is always true
+  if(ctx)
+     ^
+src/onnx.c:1142:34: warning: Either the condition 'o' is redundant or there is possible null pointer dereference: graph->initializer[k]. [nullPointerRedundantCheck]
+     if(strcmp(graph->initializer[k]->name, name) == 0)
+                                 ^
+src/onnx.c:1145:10: note: Assuming that condition 'o' is not redundant
+      if(o)
+         ^
+src/onnx.c:1144:29: note: Assignment to 'o=graph->initializer[k]'
+      o = graph->initializer[k];
+                            ^
+src/onnx.c:1142:34: note: Null pointer dereference
+     if(strcmp(graph->initializer[k]->name, name) == 0)
+                                 ^
+src/onnx.c:208:7: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+      if(strcmp(v->type->tensor_type->shape->dim[i]->dim_param, "batch_size") == 0)
+      ^
+src/onnx.c:210:7: note: Found duplicate branches for 'if' and 'else'.
+      else
+      ^
+src/onnx.c:208:7: note: Found duplicate branches for 'if' and 'else'.
+      if(strcmp(v->type->tensor_type->shape->dim[i]->dim_param, "batch_size") == 0)
+      ^
+src/onnx.h:331:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, j, k;
+     ^
+src/onnx.h:331:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j, k;
+        ^
+src/onnx.h:331:12: style: The scope of the variable 'k' can be reduced. [variableScope]
+ int i, j, k;
+           ^
+src/onnx.c:130:9: style: The scope of the variable 'buf' can be reduced. [variableScope]
+ void * buf;
+        ^
+src/onnx.c:131:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ size_t l, len;
+        ^
+src/onnx.c:131:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+ size_t l, len;
+           ^
+src/onnx.c:156:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:185:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:239:9: style: The scope of the variable 'n' can be reduced. [variableScope]
+ size_t n, i;
+        ^
+src/onnx.c:239:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+ size_t n, i;
+           ^
+src/onnx.c:240:6: style: The scope of the variable 'sz' can be reduced. [variableScope]
+ int sz;
+     ^
+src/onnx.c:546:9: style: The scope of the variable 'rop' can be reduced. [variableScope]
+ void (*rop)(struct onnx_node_t *);
+        ^
+src/onnx.c:1056:14: style: The scope of the variable 'domain' can be reduced. [variableScope]
+ char * p, * domain;
+             ^
+src/onnx.c:1267:23: style: The scope of the variable 'n' can be reduced. [variableScope]
+ struct onnx_node_t * n;
+                      ^
+src/onnx.c:1268:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:1371:9: style: The scope of the variable 'buf' can be reduced. [variableScope]
+ void * buf;
+        ^
+src/onnx.c:1372:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ size_t l, len;
+        ^
+src/onnx.c:1372:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+ size_t l, len;
+           ^
+src/onnx.c:1374:6: style: The scope of the variable 'ndim' can be reduced. [variableScope]
+ int ndim = 0;
+     ^
+src/onnx.c:1375:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:1418:10: style: The scope of the variable 'str' can be reduced. [variableScope]
+ char ** str;
+         ^
+src/onnx.c:1564:10: style: The scope of the variable 'str' can be reduced. [variableScope]
+ char ** str;
+         ^
+src/onnx.c:1565:9: style: The scope of the variable 'n' can be reduced. [variableScope]
+ size_t n;
+        ^
+src/onnx.c:1566:6: style: The scope of the variable 'sz' can be reduced. [variableScope]
+ int sz, i;
+     ^
+src/onnx.c:1566:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int sz, i;
+         ^
+src/onnx.c:1667:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ size_t l;
+        ^
+src/onnx.c:1668:6: style: The scope of the variable 'sz' can be reduced. [variableScope]
+ int sz;
+     ^
+src/onnx.c:1706:25: style: The scope of the variable 'attr' can be reduced. [variableScope]
+ Onnx__AttributeProto * attr;
+                        ^
+src/onnx.c:1707:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:1782:6: style: The scope of the variable 'ndim' can be reduced. [variableScope]
+ int ndim = 0;
+     ^
+src/onnx.c:1783:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:1836:8: style: The scope of the variable 'sizes' can be reduced. [variableScope]
+ int * sizes, * levels;
+       ^
+src/onnx.c:1836:17: style: The scope of the variable 'levels' can be reduced. [variableScope]
+ int * sizes, * levels;
+                ^
+src/onnx.c:1838:9: style: The scope of the variable 'lp' can be reduced. [variableScope]
+ char * lp, * rp;
+        ^
+src/onnx.c:1838:15: style: The scope of the variable 'rp' can be reduced. [variableScope]
+ char * lp, * rp;
+              ^
+src/onnx.c:1839:9: style: The scope of the variable 'p' can be reduced. [variableScope]
+ void * p;
+        ^
+src/onnx.c:1840:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, j, k;
+     ^
+src/onnx.c:1840:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j, k;
+        ^
+src/onnx.c:1840:12: style: The scope of the variable 'k' can be reduced. [variableScope]
+ int i, j, k;
+           ^
+src/onnx.c:2056:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:2084:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:2095:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:2115:23: style: The scope of the variable 'n' can be reduced. [variableScope]
+ struct onnx_node_t * n;
+                      ^
+src/onnx.c:2116:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/onnx.c:44:17: style: Checking if unsigned expression 'len' is less than zero. [unsignedLessThanZero]
+ if(!buf || len <= 0)
+                ^
+src/onnx.h:374:19: portability: 'x->datas' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  return x->datas + onnx_tensor_indices_to_offset(x, ix) * onnx_tensor_type_sizeof(x->type);
+                  ^
+src/onnx.c:144:44: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    for(len = 0; len < l; len += fread(buf + len, 1, l - len, fp));
+                                           ^
+src/onnx.c:1388:44: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    for(len = 0; len < l; len += fread(buf + len, 1, l - len, fp));
+                                           ^
+src/onnx.c:1912:28: portability: 't->datas' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+     p = (void *)(t->datas + onnx_tensor_type_sizeof(t->type) * idx);
+                           ^
+src/onnx.c:1955:7: portability: 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+      ONNX_LOG("%g + %gi,", *((float *)p), *((float *)(p + sizeof(float))));
+      ^
+src/onnx.c:1958:7: portability: 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+      ONNX_LOG("%g + %gi,", *((double *)p), *((double *)(p + sizeof(double))));
+      ^
+src/onnx.c:2031:5: portability: 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    ONNX_LOG("%g + %gi", *((float *)p), *((float *)(p + sizeof(float))));
+    ^
+src/onnx.c:2034:5: portability: 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    ONNX_LOG("%g + %gi", *((double *)p), *((double *)(p + sizeof(double))));
+    ^
+src/onnx.h:354:64: error: Uninitialized variable: dims [uninitvar]
+ if((y->type != type) || (y->ndim != ndim) || (memcmp(y->dims, dims, sizeof(int) * ndim) != 0))
+                                                               ^
+src/protobuf-c.c:2560:14: style: Condition '*pstr!=NULL' is always true [knownConditionTrueFalse]
+   if (*pstr != NULL && *pstr != def)
+             ^
+src/protobuf-c.c:2558:28: note: Assuming that condition '*pstr!=NULL' is not redundant
+  if (maybe_clear && *pstr != NULL) {
+                           ^
+src/protobuf-c.c:2560:14: note: Condition '*pstr!=NULL' is always true
+   if (*pstr != NULL && *pstr != def)
+             ^
+src/protobuf-c.c:820:19: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+  out[1] = (value >> 7) | 0x80;
+                  ^
+src/protobuf-c.c:821:19: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+  out[2] = (value >> 14) | 0x80;
+                  ^
+src/protobuf-c.c:822:19: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+  out[3] = (value >> 21) | 0x80;
+                  ^
+src/protobuf-c.c:823:19: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+  out[4] = (value >> 28) | 0x80;
+                  ^
+src/protobuf-c.c:3026:61: style:inconclusive: Function 'protobuf_c_message_unpack' argument 1 names different: declaration 'descriptor' definition 'desc'. [funcArgNamesDifferent]
+protobuf_c_message_unpack(const ProtobufCMessageDescriptor *desc,
+                                                            ^
+src/protobuf-c.h:960:36: note: Function 'protobuf_c_message_unpack' argument 1 names different: declaration 'descriptor' definition 'desc'.
+ const ProtobufCMessageDescriptor *descriptor,
+                                   ^
+src/protobuf-c.c:3026:61: note: Function 'protobuf_c_message_unpack' argument 1 names different: declaration 'descriptor' definition 'desc'.
+protobuf_c_message_unpack(const ProtobufCMessageDescriptor *desc,
+                                                            ^
+src/protobuf-c.c:3541:9: warning: Size of pointer 'service' used instead of size of its data. [pointerSize]
+ memset(service + 1, 0, descriptor->n_methods * sizeof(GenericHandler));
+        ^
+src/protobuf-c.c:321:45: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+ return ((uint32_t)(v) << 1) ^ (uint32_t)(v >> 31);
+                                            ^
+src/protobuf-c.c:385:45: portability: Shifting signed 64-bit value by 63 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+ return ((uint64_t)(v) << 1) ^ (uint64_t)(v >> 63);
+                                            ^
+src/protobuf-c.c:1892:7: style: Variable 'rv' is assigned a value that is never used. [unreadVariable]
+   rv += len;
+      ^
+tests/main.c:15:25: style: The scope of the variable 't' can be reduced. [variableScope]
+ struct onnx_tensor_t * t, * o;
+                        ^
+tests/main.c:15:30: style: The scope of the variable 'o' can be reduced. [variableScope]
+ struct onnx_tensor_t * t, * o;
+                             ^
+tests/main.c:17:7: style: The scope of the variable 'data_set_path' can be reduced. [variableScope]
+ char data_set_path[PATH_MAX];
+      ^
+tests/main.c:19:6: style: The scope of the variable 'data_set_index' can be reduced. [variableScope]
+ int data_set_index;
+     ^
+tests/main.c:20:6: style: The scope of the variable 'ninput' can be reduced. [variableScope]
+ int ninput, noutput;
+     ^
+tests/main.c:20:14: style: The scope of the variable 'noutput' can be reduced. [variableScope]
+ int ninput, noutput;
+             ^
+tests/main.c:21:6: style: The scope of the variable 'okay' can be reduced. [variableScope]
+ int okay;
+     ^
+tests/main.c:96:18: style: The scope of the variable 'd' can be reduced. [variableScope]
+ struct dirent * d;
+                 ^
+src/hmap.c:178:0: style: The function 'hmap_remove' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:46:0: style: The function 'onnx__attribute_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:16:0: style: The function 'onnx__attribute_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:22:0: style: The function 'onnx__attribute_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:29:0: style: The function 'onnx__attribute_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:37:0: style: The function 'onnx__attribute_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:361:0: style: The function 'onnx__graph_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:331:0: style: The function 'onnx__graph_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:337:0: style: The function 'onnx__graph_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:344:0: style: The function 'onnx__graph_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:352:0: style: The function 'onnx__graph_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:196:0: style: The function 'onnx__model_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:202:0: style: The function 'onnx__model_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:209:0: style: The function 'onnx__model_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:136:0: style: The function 'onnx__node_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:106:0: style: The function 'onnx__node_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:112:0: style: The function 'onnx__node_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:119:0: style: The function 'onnx__node_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:127:0: style: The function 'onnx__node_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:616:0: style: The function 'onnx__operator_set_id_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:586:0: style: The function 'onnx__operator_set_id_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:592:0: style: The function 'onnx__operator_set_id_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:599:0: style: The function 'onnx__operator_set_id_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:607:0: style: The function 'onnx__operator_set_id_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:457:0: style: The function 'onnx__sparse_tensor_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:427:0: style: The function 'onnx__sparse_tensor_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:433:0: style: The function 'onnx__sparse_tensor_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:440:0: style: The function 'onnx__sparse_tensor_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:448:0: style: The function 'onnx__sparse_tensor_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:271:0: style: The function 'onnx__string_string_entry_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:241:0: style: The function 'onnx__string_string_entry_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:247:0: style: The function 'onnx__string_string_entry_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:254:0: style: The function 'onnx__string_string_entry_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:262:0: style: The function 'onnx__string_string_entry_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:316:0: style: The function 'onnx__tensor_annotation__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:286:0: style: The function 'onnx__tensor_annotation__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:292:0: style: The function 'onnx__tensor_annotation__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:299:0: style: The function 'onnx__tensor_annotation__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:307:0: style: The function 'onnx__tensor_annotation__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:382:0: style: The function 'onnx__tensor_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:388:0: style: The function 'onnx__tensor_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:395:0: style: The function 'onnx__tensor_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:508:0: style: The function 'onnx__tensor_shape_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:478:0: style: The function 'onnx__tensor_shape_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:484:0: style: The function 'onnx__tensor_shape_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:491:0: style: The function 'onnx__tensor_shape_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:499:0: style: The function 'onnx__tensor_shape_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:181:0: style: The function 'onnx__training_info_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:151:0: style: The function 'onnx__training_info_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:157:0: style: The function 'onnx__training_info_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:164:0: style: The function 'onnx__training_info_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:172:0: style: The function 'onnx__training_info_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:571:0: style: The function 'onnx__type_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:541:0: style: The function 'onnx__type_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:547:0: style: The function 'onnx__type_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:554:0: style: The function 'onnx__type_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:562:0: style: The function 'onnx__type_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:91:0: style: The function 'onnx__value_info_proto__free_unpacked' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:61:0: style: The function 'onnx__value_info_proto__get_packed_size' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:67:0: style: The function 'onnx__value_info_proto__pack' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:74:0: style: The function 'onnx__value_info_proto__pack_to_buffer' is never used. [unusedFunction]
+
+^
+src/onnx.proto3.pb-c.c:82:0: style: The function 'onnx__value_info_proto__unpack' is never used. [unusedFunction]
+
+^
+src/onnx.c:1754:0: style: The function 'onnx_attribute_read_floats' is never used. [unusedFunction]
+
+^
+src/onnx.c:1822:0: style: The function 'onnx_attribute_read_sparse_tensor' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:191:0: style: The function 'protobuf_c_buffer_simple_append' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3582:0: style: The function 'protobuf_c_enum_descriptor_get_value' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3552:0: style: The function 'protobuf_c_enum_descriptor_get_value_by_name' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3626:0: style: The function 'protobuf_c_message_descriptor_get_field' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3592:0: style: The function 'protobuf_c_message_descriptor_get_field_by_name' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3636:0: style: The function 'protobuf_c_service_descriptor_get_method_by_name' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3544:0: style: The function 'protobuf_c_service_destroy' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:3533:0: style: The function 'protobuf_c_service_generated_init' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:137:0: style: The function 'protobuf_c_version' is never used. [unusedFunction]
+
+^
+src/protobuf-c.c:143:0: style: The function 'protobuf_c_version_number' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
